@@ -1,14 +1,16 @@
 package com.capbank.CapBank.models;
 
+import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.time.LocalDate;
 
+@Data
 @Document(collection = "account")
 public class Account {
     @Id
-    private long id;
+    private String id;
     private String accountNumber;
     private String accountType;
     private Double openingBalance;
@@ -29,11 +31,11 @@ public class Account {
         this.openingDate = openingDate;
     }
 
-    public long getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(String id) {
         this.id = id;
     }
 
