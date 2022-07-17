@@ -1,7 +1,7 @@
-package com.capbank.CapBank;
+package com.capbank.CapBank.repository;
 
+import com.capbank.CapBank.models.User;
 import org.springframework.data.mongodb.repository.MongoRepository;
-import org.springframework.data.mongodb.repository.Query;
 
 import java.util.Optional;
 

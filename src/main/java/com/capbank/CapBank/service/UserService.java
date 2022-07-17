@@ -1,5 +1,7 @@
-package com.capbank.CapBank;
+package com.capbank.CapBank.service;
 
+import com.capbank.CapBank.models.User;
+import com.capbank.CapBank.repository.UserRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
